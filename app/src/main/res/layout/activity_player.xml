@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presenter.PlayerActivity"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@android:color/black">
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="End Stream"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/gatewayDisplay"
+        android:id="@+id/endStreamButton"/>
+
+    <TextView
+        android:id="@+id/gatewayDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"
+        android:background="#FDFDFD"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

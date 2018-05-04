@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Presenter.LoginActivity"
+    android:background="#FDFDFD">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Stream Player"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/logo"/>
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/tokenID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:hint="Source ID"
+        android:textSize="12dp"
+        android:shadowColor="@color/colorAccent"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:maxLength="36"
+        android:background="@drawable/shadow"
+        android:scrollHorizontally="false"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+
+        android:id="@+id/tokenAccess"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:hint="Source Token"
+        android:textSize="12dp"
+        android:maxLength="21"
+        android:scrollHorizontally="false"
+        android:background="@drawable/shadow"
+        android:layout_below="@+id/tokenID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/startStreamButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Start Stream"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tokenAccess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+</RelativeLayout>
