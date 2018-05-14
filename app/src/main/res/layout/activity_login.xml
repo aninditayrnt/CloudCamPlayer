@@ -13,7 +13,7 @@
         android:text="Stream Player"
         android:textSize="40dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/logo"/>
 
     <EditText
@@ -27,9 +27,10 @@
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:maxLength="36"
-        android:background="@drawable/shadow"
         android:scrollHorizontally="false"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:textIsSelectable="true"
+        android:background="@drawable/shadow"/>
 
     <EditText
 
@@ -41,19 +42,51 @@
         android:textSize="12dp"
         android:maxLength="21"
         android:scrollHorizontally="false"
-        android:background="@drawable/shadow"
         android:layout_below="@+id/tokenID"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textIsSelectable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow"/>
+
+    <EditText
+
+        android:id="@+id/refreshToken"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:hint="Refresh Token"
+        android:textSize="12dp"
+        android:maxLength="21"
+        android:scrollHorizontally="false"
+        android:layout_below="@+id/tokenAccess"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow"/>
+
+    <EditText
+
+        android:id="@+id/baseToken"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:hint="Base Token"
+        android:textSize="12dp"
+        android:scrollHorizontally="false"
+        android:layout_below="@+id/refreshToken"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow"/>
 
     <Button
         android:id="@+id/startStreamButton"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="Start Stream"
-        android:textColor="@android:color/white"
-        android:layout_below="@+id/tokenAccess"
         android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/baseToken"
         android:layout_marginTop="50dp"
         android:background="@android:color/holo_blue_dark"/>
 
